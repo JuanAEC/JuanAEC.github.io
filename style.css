@@ -335,8 +335,8 @@ a:focus-visible, button:focus-visible {
 .skill-chip {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 0.8rem 1.3rem;
+  gap: 12px;
+  padding: 0.6rem 1.4rem 0.6rem 0.6rem;
   background: var(--bg);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 999px;
@@ -347,7 +347,21 @@ a:focus-visible, button:focus-visible {
   border-color: rgba(255,255,255,0.25);
   transform: translateY(-2px);
 }
-.chip-dot { width: 7px; height: 7px; border-radius: 50%; }
+.skill-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.skill-icon svg { width: 19px; height: 19px; }
+
+.icon-x { background: rgba(255,93,93,0.16); color: var(--axis-x); }
+.icon-y { background: rgba(53,224,161,0.16); color: var(--axis-y); }
+.icon-z { background: rgba(79,184,255,0.16); color: var(--axis-z); }
+.icon-w { background: rgba(255,210,63,0.16); color: var(--axis-w); }
 
 /* Proyectos */
 .projects-grid {
