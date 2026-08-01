@@ -327,11 +327,6 @@ a:focus-visible, button:focus-visible {
 .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
 /* Habilidades */
-.skills-strip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.85rem;
-}
 .skill-chip {
   display: flex;
   align-items: center;
