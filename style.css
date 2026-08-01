@@ -327,36 +327,50 @@ a:focus-visible, button:focus-visible {
 .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
 /* Habilidades */
-.skill-chip {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 0.6rem 1.4rem 0.6rem 0.6rem;
-  background: var(--bg);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 999px;
-  font-size: 0.95rem;
-  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
-}
-.skill-chip:hover {
-  border-color: rgba(255,255,255,0.25);
-  transform: translateY(-2px);
-}
-.skill-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.skill-icon svg { width: 19px; height: 19px; }
 
-.icon-x { background: rgba(255,93,93,0.16); color: var(--axis-x); }
-.icon-y { background: rgba(53,224,161,0.16); color: var(--axis-y); }
-.icon-z { background: rgba(79,184,255,0.16); color: var(--axis-z); }
-.icon-w { background: rgba(255,210,63,0.16); color: var(--axis-w); }
+.skills-strip{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    margin-top:2rem;
+}
+
+/* ===== Iconos ===== */
+
+.skill-icon{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+}
+
+.skill-icon iconify-icon{
+    font-size:22px;
+    width:22px;
+    height:22px;
+}
+
+.icon-x{
+    background:rgba(255,93,93,.15);
+    color:#ff5d5d;
+}
+
+.icon-y{
+    background:rgba(53,224,161,.15);
+    color:#35e0a1;
+}
+
+.icon-z{
+    background:rgba(79,184,255,.15);
+    color:#4fb8ff;
+}
+
+.icon-w{
+    background:rgba(255,210,63,.15);
+    color:#ffd23f;
+}
 
 /* Proyectos */
 .projects-grid {
