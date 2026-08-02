@@ -329,10 +329,19 @@ a:focus-visible, button:focus-visible {
 /* Habilidades */
 
 .skills-strip{
-    display:flex;
-    flex-wrap:wrap;
-    gap:16px;
-    margin-top:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 2rem;
+}
+
+.skill-chip{
+    width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 /* ===== Iconos ===== */
@@ -340,6 +349,7 @@ a:focus-visible, button:focus-visible {
 .skill-icon{
     width:40px;
     height:40px;
+    margin-right: 8px;
     display:flex;
     align-items:center;
     justify-content:center;
