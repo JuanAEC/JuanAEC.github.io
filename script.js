@@ -21,7 +21,7 @@ mainNav.querySelectorAll("a").forEach((link) => {
 // Carrusel de imágenes en cada tarjeta de proyecto
 document.querySelectorAll(".project-media").forEach((media) => {
   const track = media.querySelector(".media-track");
-  const images = track.querySelectorAll("img");
+  const images = track.querySelectorAll("img, video");
   const dotsWrap = media.querySelector(".media-dots");
   const prevBtn = media.querySelector(".media-prev");
   const nextBtn = media.querySelector(".media-next");
